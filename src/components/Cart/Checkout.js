@@ -47,10 +47,17 @@ const Checkout = (props) => {
   const confirmHandler = (event) => {
     event.preventDefault();
 
-    if (!nameIsValid || !streetIsValid || !postalCodeIsValid || !cityIsValid) {
+    if (!formIsValid) {
       return;
     }
-    console.log("reset");
+
+    props.onConfirm({
+      name,
+      street,
+      postalCode,
+      city,
+    });
+
     resetName();
     resetStreet();
     resetPostalCode();
