@@ -25,7 +25,7 @@ const AvailableMeals = (props) => {
 
     fetchMeals(
       {
-        url: "https://eact-food-order-app-14072-default-rtdb.firebaseio.com/meals.json",
+        url: "https://react-food-order-app-14072-default-rtdb.firebaseio.com/meals.json",
       },
       transformMeals
     );
