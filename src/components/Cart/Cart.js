@@ -32,8 +32,8 @@ const Cart = (props) => {
   };
 
   const submitedOrder = (userData) => {
-    console.log(userData);
     setDidSubmit(true);
+    cartCtx.clearCart();
   };
 
   const submitOrderHandler = async (userData) => {
